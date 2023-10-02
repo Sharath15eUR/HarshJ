@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source 'add1.sh'
+
+add 1 2
+add 2 3
+add 3 4

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Enter the file name:" file
+if [ ! -e $file ]; then
+echo "File does not exist";
+else
+echo "File exists";
+if [ ! -x $file ]; then
+echo "It is not executable";
+else
+echo "It is executable";
+fi
+fi

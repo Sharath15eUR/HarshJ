@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+find . -maxdepth 1 -type d -name 'test*' | while IFS= read -r dir; do
+    echo "Files in $dir directory:"
+    echo ""
+    find $dir | while IFS= read -r  file; do
+echo $file
+    done
+    echo "------------------------"
+done

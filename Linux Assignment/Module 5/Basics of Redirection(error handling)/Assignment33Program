@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "Name: Harsh" > assignment33.txt
+echo "Address: Chennai" >> assignment33.txt
+cat assignment33.txt > assignment33_1.txt

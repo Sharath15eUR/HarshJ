@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+sumN(){
+local temp=$1
+if [ $temp -eq 0 ]; then
+echo 0
+else
+prev_num=$(($temp-1))
+prev_sum=$(sumN $prev_num)
+sum=$(($temp+$prev_sum))
+echo $sum
+fi
+}
+sumN 10

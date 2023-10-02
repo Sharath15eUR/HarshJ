@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+tr a-z A-Z << HERE
+hi
+hello
+this is a Sample program
+HERE
+
+tr a-z A-Z <<< "Hello world, This is Harsh"
